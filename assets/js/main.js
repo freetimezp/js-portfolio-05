@@ -30,7 +30,14 @@ tabs.forEach(tab => {
 })
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.work__container', {
+    selectors: {
+        target: '.work__card'
+    },
+    animation: {
+        duration: 1000
+    }
+});
 
 /*===== Link Active Work =====*/
 
