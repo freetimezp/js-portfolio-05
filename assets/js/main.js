@@ -95,7 +95,34 @@ modalCloses.forEach((modalClose) => {
 })
 
 /*=============== SWIPER TESTIMONIAL ===============*/
-
+let swiper = new Swiper(".testimonials__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    spaceBetween: 24,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        }
+    }
+});
 
 /*=============== INPUT ANIMATION ===============*/
 
